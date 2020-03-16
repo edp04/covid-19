@@ -31,13 +31,20 @@
         .tex{
           color: #333960;
         }
+        .color{
+          color: #6C757D;
+        }
+        .last{
+          font-size: smaller;
+        }
     </style>
   </head>
   <body>
       <div class="container">
         <div id="book" class="row justify-content-center">
             <div style="background-color: #FAFDFB;" class="col-lg-7 col-md-8 col-11 border rounded mt-1 mb-5">
-                <h3 class="my-4 h3 font-weight-bold text-center">COVID-19 UPDATE</h3>
+                <h3 class="mt-4 h3 font-weight-bold text-center">COVID-19 UPDATE</h3>
+                <hr class="mb-5 w-50">
                 <div class="p-3 bg-biru rounded my-2">
                   <p class="my-2 text-center text-white">Total Konfirmasi</p>
                   <div id="output" class="tex text-center"></div>
@@ -54,8 +61,10 @@
                   <p class="my-2 text-center text-white">Meninggal</p>
                   <div id="deaths" class="tex text-center"></div>
                 </div>
+                <span class="color last">Lastupdate:</span>
+                <div id="lastupdate"></div>
                 <div class="text-center p-5">
-                 <a href="https://github.com/pirmansh/covid-19"><small class="my-4 text-center" style="color: #9e9e9e;"><i class="fab fa-github"></i> pirmansh</small></a> 
+                 <a href="https://github.com/pirmansh/covid-19"><small class="my-4 color text-center"><i class="fab fa-github"></i> pirmansh</small></a> 
                 </div>
                 
             </div>

@@ -17,20 +17,21 @@ function getApi(){
             let recovered= '';
             let deaths= '';
             let activeCare= '';
-            // let lastUpdatedAt= '';
+            let lastUpdatedAt= '';
 
                     console.log(response);
                     confirmed += `<h3>${response.confirmed.value}</h3>`
                     recovered += `<h3>${response.recovered.value}</h3>`
                     deaths += `<h3>${response.deaths.value}</h3>`
                     activeCare += `<h3>${response.activeCare.value}</h3>`
-                    // lastUpdatedAt += `<p>${response.lastUpdateAt.value}</p>`
+                    lastUpdatedAt += `<small class="color">${response.metadata.lastUpdatedAt}</small>`
        
 
             document.getElementById('output').innerHTML = confirmed;
             document.getElementById('activeCare').innerHTML = activeCare;
             document.getElementById('recovered').innerHTML = recovered;
             document.getElementById('deaths').innerHTML = deaths;
+            document.getElementById('lastupdate').innerHTML = lastUpdatedAt;
             
         }
     }
