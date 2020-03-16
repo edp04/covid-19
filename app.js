@@ -1,5 +1,9 @@
-
-
+/**
+*
+* author: Pirmansyah
+*
+*
+**/
 
 function getApi(){
     
@@ -19,7 +23,7 @@ function getApi(){
             let activeCare= '';
             let lastUpdatedAt= '';
 
-                    console.log(response);
+                   
                     confirmed += `<h3>${response.confirmed.value}</h3>`
                     recovered += `<h3>${response.recovered.value}</h3>`
                     deaths += `<h3>${response.deaths.value}</h3>`
@@ -31,16 +35,9 @@ function getApi(){
             document.getElementById('activeCare').innerHTML = activeCare;
             document.getElementById('recovered').innerHTML = recovered;
             document.getElementById('deaths').innerHTML = deaths;
-            document.getElementById('lastupdate').innerHTML = lastUpdatedAt;
-            
+            document.getElementById('lastupdate').innerHTML = lastUpdatedAt;            
         }
     }
-
     xhr.send();
-
- 
 }
-
-setTimeout(function(){ 
-    getApi(); 
-}, 1000);
+ const createClock = setInterval(getApi, 1000);
