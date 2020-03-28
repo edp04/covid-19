@@ -1,0 +1,76 @@
+.container{
+    overflow: auto;
+}
+.text-heading{
+    color: #2C3A47;
+}
+small{
+    color: #f1f2f6;
+    font-weight: 800;
+}
+p{
+    color: #485460;
+    font-size: 15px;
+}
+footer a{
+    color: #485460;
+}
+footer{
+    padding: 40px;
+    text-align: center;
+    background: #f1f2f6;
+}
+.text-data{
+    color: #2f3542;
+    font-weight: 700;
+}
+.lastupdate{
+    color: #2f3542;
+}
+.shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.border{
+    border-radius: 10px;
+}
+.landing-page{
+    width: 100%;
+    border-bottom: 2px solid #dcdde1;
+}
+.h1-responsive{
+   color: #dcdde1;
+   padding: 100px 50px;
+   font-weight: 900;
+}
+.confirmed{
+background: #ffa502;
+}
+.fa-clipboard-list{
+    color: #eccf77;
+}
+.activecare{
+    background: #1e90ff;
+}
+.fa-first-aid{
+    color: #eb2f06;
+}
+.recovered{
+    background: #26de81;
+}
+.fa-smile-beam{
+    color: #f5cd79;
+}
+.deaths{
+    background: #ff4757;
+}
+.fa-frown{
+    color: #ffd32a;
+}
+@media only screen and (max-width: 700px){
+    .h1-responsive{
+        font-size: 30px;
+        padding: 60px 20px;
+        text-align: unset;
+    }
+}

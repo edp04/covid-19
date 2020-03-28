@@ -8,68 +8,93 @@
     <meta property="og:image" content="https://github.com/pirmansh/covid-19/blob/master/images.jpeg?raw=true" />
     <meta name="theme-color" content="#00a8ff" />
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Pirmansyah | COVID-19</title>
-    <style>
-        .bg-biru{
-            background-color: #00a8ff;
-           
-        }
-        .bg-hijau{
-          background-color: #2ecc71;
-        }
-        .h3{
-            color: #0688ce;
-        }
-        .bg-orange{
-          background-color: #e67e22;
-        }
-        .meninggal{
-            background-color: #e84118;
-        }
-        .tex{
-          color: #333960;
-        }
-        .color{
-          color: #6C757D;
-        }
-        .last{
-          font-size: smaller;
-        }
-    </style>
   </head>
   <body>
-      <div class="container">
-        <div id="book" class="row justify-content-center">
-            <div style="background-color: #FAFDFB;" class="col-lg-7 col-md-8 col-11 border rounded mt-1 mb-5">
-                <h3 class="mt-4 h3 font-weight-bold text-center">COVID-19 UPDATE</h3>
-                <hr class="mb-5 w-50">
-                <div class="p-3 bg-biru rounded my-2">
-                  <p class="my-2 text-center text-white">Total Konfirmasi</p>
-                  <div id="output" class="tex text-center"></div>
-                </div>
-                <div class="p-3 bg-orange rounded my-2">
-                  <p class="my-2 text-center text-white">Dalam Perawatan</p>
-                  <div id="activeCare" class="tex text-center"></div>
-                </div>
-                <div class="p-3 bg-hijau rounded my-2">
-                  <p class="my-2 text-center text-white">Sembuh</p>
-                  <div id="recovered" class="tex text-center"></div>
-                </div>
-                <div class="p-3 meninggal rounded my-2">
-                  <p class="my-2 text-center text-white">Meninggal</p>
-                  <div id="deaths" class="tex text-center"></div>
-                </div>
-                <span class="color last">Lastupdate:</span>
-                <div id="lastupdate"></div>
-                <div class="text-center p-5">
-                 <a href="https://github.com/pirmansh/covid-19"><small class="my-4 color text-center"><i class="fab fa-github"></i> pirmansh</small></a> 
-                </div>
-                
+      <div class="landing-page" style="background: url(https://images.unsplash.com/photo-1584573062914-a1f7848470a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60); background-repeat: no-repeat; background-size: cover;">
+        <h1 class="h1-responsive">Update COVID-19</h1>
+      </div>
+      <div class="container my-5">
+        <h5 class="text-heading ml-1">Data Terkini:</h5>
+        <hr>
+        <div class="data">
+          <div class="row justify-content-center text-center">
+            <div class="col-5 col-md-5 col-lg-5 border shadow confirmed box">
+              <div class="my-3">
+                <small>Total Konfirmasi</small>
+                <div id="output" class="text-data px-5 py-2"></div>
+                <i class="fas fa-clipboard-list fa-2x"></i>
+              </div>
             </div>
+            <div class="col-1"></div>
+            <div class="col-5 col-md-5 col-lg-5 border activecare box">
+              <div class="my-3">
+                <small>Dalam Perawatan</small>
+                <div id="activeCare" class="text-data px-5 py-2"></div>
+                <i class="fas fa-first-aid fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center text-center mt-3">
+            <div class="col-5 col-md-5 col-lg-5 border shadow recovered box">
+              <div class="my-3">
+                <small>Sembuh</small>
+                <div id="recovered" class="text-data px-5 py-2"></div>
+                <i class="fas fa-smile-beam fa-2x"></i>
+              </div>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5 col-md-5 col-lg-5 border deaths box">
+              <div class="my-3">
+                <small>Meninggal</small>
+                <div id="deaths" class="text-data px-5 py-2"></div>
+                <i class="fas fa-frown fa-2x"></i>
+              </div>
+            </div>
+          </div>
+          <div id="lastupdate" class="mt-4"></div>
+        </div>
+        <hr class="mb-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-5">
+            <h5 class="text-heading">Apa Itu COVID-19?</h5>
+            <p>Coronavirus Disease 2019 atau COVID-19 adalah penyakit baru yang dapat menyebabkan gangguan pernapasan dan radang paru. Penyakit ini disebabkan oleh infeksi Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2). Gejala klinis yang muncul beragam, mulai dari seperti gejala flu biasa (batuk, pilek, nyeri tenggorok, nyeri otot, nyeri kepala) sampai yang berkomplikasi berat (pneumonia atau sepsis).</p>
+          </div>
+          <div class="col-10 col-md-6 col-lg-5">
+            <img src="https://images.unsplash.com/photo-1584118624012-df056829fbd0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="img-fluid shadow rounded" alt="covid-19">
+          </div>
+        </div>
+        <hr class="mb-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-9 text-center">
+            <h5 class="text-heading mb-4">Tips Agar Terhindar Dari COVID-19</h5>
+            <p>Ada beberapa hal yang dapat Anda lakukan untuk mencegah atau membantu
+              menghentikan penyebaran coronavirus, antara lain:</p>
+              <h6 class="text-heading">Hal yang Harus Dilakukan</h6>
+              <div class="row justify-content-center my-5">
+                <div class="col-7 col-md-4">
+                  <img src="./img/undraw_wash_hands_nwl2.png" class="img-fluid" alt="">
+                  <p>Cuci tangan dengan sabun dan air minimal 20 detik</p>
+                </div>
+                <div class="col-7 col-md-4">
+                  <img src="./img/undraw_relaxing_at_home_9tyc.png" class="img-fluid" alt="">
+                  <p>Stay at home, bekerja di rumah, belajar di rumah, beribadah di rumah</p>
+                </div>
+              </div>
+
+
+            <div class="shadow">
+              <iframe width="100%" height="375" src="https://www.youtube.com/embed/1APwq1df6Mw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </div>
+      <footer>
+        <a href="https://github.com/pirmansh/"><i class="fab fa-github"></i> pirmansh</a>
+      </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script src="./app.js"></script> -->
