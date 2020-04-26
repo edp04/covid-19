@@ -1,4 +1,8 @@
-
+body{
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
 .text-heading{
     color: #2C3A47;
 }
@@ -17,11 +21,6 @@ footer{
     text-align: center;
     background: #f1f2f6;
     width: 100%;
-}
-.text-data h3{
-    color: #2f3542;
-    font-weight: 700;
-    font-size: 40px;
 }
 .lastupdate{
     color: #2f3542;
@@ -49,27 +48,19 @@ footer{
 .confirmed{
 background: #ffa502;
 }
-.fa-clipboard-list{
-    color: #eccf77;
-}
+
 .activecare{
     background: #1e90ff;
 }
-.fa-first-aid{
-    color: #eb2f06;
-}
+
 .recovered{
     background: #26de81;
 }
-.fa-smile-beam{
-    color: #f5cd79;
-}
+
 .deaths{
     background: #ff4757;
 }
-.fa-frown{
-    color: #ffd32a;
-}
+
 @media only screen and (max-width: 700px){
     .h1-responsive{
         font-size: 30px;
