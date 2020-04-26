@@ -1,8 +1,9 @@
-body{
+.container-fluid{
     margin:0px;
     padding:0px;
     width:100%;
 }
+
 .text-heading{
     color: #2C3A47;
 }
@@ -13,13 +14,13 @@ p{
     color: #485460;
     font-size: 15px;
 }
-footer a{
+.footer a{
     color: #485460;
 }
-footer{
+.footer{
     padding: 40px;
     text-align: center;
-    background: #f1f2f6;
+    /* background: #f1f2f6; */
     width: 100%;
 }
 .lastupdate{
