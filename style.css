@@ -1,12 +1,9 @@
-.container{
-    overflow: auto;
-}
+
 .text-heading{
     color: #2C3A47;
 }
 small{
     color: #f1f2f6;
-    font-weight: 800;
 }
 p{
     color: #485460;
@@ -20,23 +17,28 @@ footer{
     text-align: center;
     background: #f1f2f6;
 }
-.text-data{
+.text-data h3{
     color: #2f3542;
     font-weight: 700;
+    font-size: 40px;
 }
 .lastupdate{
     color: #2f3542;
+}
+.shadow-nav{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .shadow{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
-.border{
-    border-radius: 10px;
-}
+
 .landing-page{
-    width: 100%;
-    border-bottom: 2px solid #dcdde1;
+    margin: 150px 0;
+}
+.landing-page h1{
+    font-size: 50px;
+    color: #3F3D56;
 }
 .h1-responsive{
    color: #dcdde1;
