@@ -51,12 +51,12 @@ function getApi(){
 
      xhr.onload = function(){
          if(this.status === 200){
-            let option = document.getElementById('provinsi-item');
+            // let option = document.getElementById('provinsi-item');
             const response = JSON.parse(this.responseText);
             const td = document.getElementById('hasil');
             let counter = 1;
             response.forEach(result => {
-                option.innerHTML += `<option value="${result.attributes.Provinsi}">${result.attributes.Provinsi}</option>`;
+                // option.innerHTML += `<option value="${result.attributes.Provinsi}">${result.attributes.Provinsi}</option>`;
 
                 td.innerHTML += `
                     <tr>
