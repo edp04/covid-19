@@ -37,7 +37,7 @@ function getApi(){
     }
     xhr.send();
 }
- const createClock = setInterval(getApi, 1000);
+getApi();
 
 
  function getDataProvinsiItem(){
